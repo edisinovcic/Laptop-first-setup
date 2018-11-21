@@ -1,6 +1,18 @@
 #bin/bash
-#Install better terminal
+#Install build essentials
 sudo apt update -y && sudo apt upgrade -y
+sudo apt install build-essential -y
+
+#Install nvm and node and npm
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+export NVM_DIR="${XDG_CONFIG_HOME/:-$HOME/.}nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+source ~/.bashrc
+#sudo nvm install node -y Needs to be done in another terminal session
+#sudo nvm install-latest-npm -y Needs to be done in another terminal session
+
+
+#Install better terminal
 sudo apt install terminator -y
 
 #Install GoogleChrome
@@ -11,10 +23,10 @@ sudo apt update
 sudo apt install google-chrome-stable
 
 #Install IntelliJ Idea Ultimate
-wget https://download.jetbrains.com/idea/ideaIU-2018.2.2.tar.gz
-tar -xzf ideaIU-2018.2.2.tar.gz
-rm ideaIU-2018.2.2.tar.gz 
-mv idea-IU-182.4129.33 idea
+wget https://download.jetbrains.com/idea/ideaIU-2018.2.6.tar.gz
+tar -xzf ideaIU-2018.2.6.tar.gz
+rm ideaIU-2018.2.6.tar.gz 
+mv idea-* idea
 mv idea /opt/
 
 #Install WebStorm 
