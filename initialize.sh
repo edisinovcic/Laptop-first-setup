@@ -120,3 +120,8 @@ sudo npm install -g composer-cli@0.20
 sudo npm install -g composer-rest-server@0.20
 sudo npm install -g generator-hyperledger-composer@0.20
 sudo npm install -g yo
+
+#Remove all docker containers and images
+#docker kill $(docker ps -q)
+#docker rm $(docker ps -aq)
+#docker rmi $(docker images dev-* -q)
