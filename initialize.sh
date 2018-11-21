@@ -111,4 +111,12 @@ sudo add-apt-repository ppa:webupd8team/java
 sudo apt-get update
 sudo apt-get install oracle-java8-installer -y
 
+#Install Hyperledger Composer, Fabric and all the tools
+curl -O https://hyperledger.github.io/composer/latest/prereqs-ubuntu.sh
+sudo chmod u+x prereqs-ubuntu.sh
+sudo ./prereqs-ubuntu.sh -y
 
+sudo npm install -g composer-cli@0.20
+sudo npm install -g composer-rest-server@0.20
+sudo npm install -g generator-hyperledger-composer@0.20
+sudo npm install -g yo
