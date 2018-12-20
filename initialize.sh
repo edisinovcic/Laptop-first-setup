@@ -3,14 +3,15 @@
 sudo apt update -y && sudo apt upgrade -y
 sudo apt install build-essential -y
 
+sudo apt install curl -y
+
 #Install nvm and node and npm
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
-export NVM_DIR="${XDG_CONFIG_HOME/:-$HOME/.}nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-source ~/.bashrc
+#curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+#export NVM_DIR="${XDG_CONFIG_HOME/:-$HOME/.}nvm"
+#[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+#source ~/.bashrc
 #sudo nvm install node -y Needs to be done in another terminal session
 #sudo nvm install-latest-npm -y Needs to be done in another terminal session
-
 
 #Install better terminal
 sudo apt install terminator -y
